@@ -1,0 +1,119 @@
+/* for heading we use:Poppins fonts and for paragraph  we will use Roboto fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+/* set some default value */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section:20px;
+}
+
+/* for heading */
+body{
+    font-family: 'Poppins', sans-serif;
+    color:var(--primary-text-color);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+/* for paragraph */
+p{
+    font-family: 'Poppins',sans-serif;
+    color: var(--secondary-text-color);
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+/* anchor tag */
+a{
+    text-decoration: none;
+    display: inline-block;
+}   
+
+/* utility classes */
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}            
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;  /*short-hand property of m-i-(start,end) */
+    padding-inline: var(--padding-inline-section);
+}
+.flex{
+    display: flex;
+    align-items:center;
+}
+li{
+    list-style: none;
+}
+.primary-button{
+background-color:var(--accent-color);
+color: white !important;
+border-radius: 6px;
+font-weight: 550;
+padding:12px 24px;
+box-shadow: 0 0 2px var(--secondary-text-color);
+transition: 0.2s ease-out;
+
+}
+.primary-button:hover{
+color: var(--accent-color-dark);
+transition: 0.2s ease-out;
+}
+.secondary-button{
+    border:0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    padding:12px 24px;
+    font-weight: 700px;
+}
+
+/* top-banner */
+.top-banner{
+  background-color:#e74694;
+  background-image: url(./Assets/asset\ 32.png);
+  background-size: 300px;
+}
+.banner-text{
+    text-align:center;
+    padding: 15px 20px;  /* top-bottom left-right */
+    color: white;
+}
+
+/*nav-bar */
+.company-logo{
+    max-width: 200px;
+    max-height: 40px;
+}
+.main-nav{
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.nav-ele ul{
+    justify-content: end;
+    gap:35px;
+}
+.nav-ele{
+    flex-basis: 730px;
+}
+.hover-link{
+    color:var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+.hover-link:hover{
+    color: var(--accent-color);
+}
