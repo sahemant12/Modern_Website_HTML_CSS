@@ -219,3 +219,40 @@ li{
 .padd{
     padding:12px 18px !important;
 }
+.big-features-section{
+    margin-top: 70px;
+}
+.feature-img img{
+    width: 100%;
+}
+.feature-disc{
+    align-items: flex-start;
+    margin-left: 50px;
+    gap: 30px 5px;
+    line-height: 40px;
+}
+
+.container3{
+    max-width: 1050px;
+    margin-inline: auto;  /*short-hand property of m-i-(start,end) */
+    padding-inline: var(--padding-inline-section);
+}
+.ceo-pic img{
+    width:50%;
+}
+.name p{
+    font-size:small;
+}
+.name{
+   line-height: 10px;
+   margin-right: -50px;
+}
+.sm-sz{
+    width: 20%;
+    text-align: left;
+    margin-top: 20px;
+}
+.ceo-detail{
+    margin-top: 20px;
+    align-items:center;
+}
