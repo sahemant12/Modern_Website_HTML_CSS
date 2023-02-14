@@ -4,16 +4,16 @@
 
 /* set some default value */
 *{
-    margin:0;
+    margin:0; /* use, so that there is no margin and padding */
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* all the tag like para, div have the same size box */
 }
 :root{
-    --primary-text-color: #183b56;
+    --primary-text-color: #183b56; /* to assign variable value to color(or anything else) we use --var-name for syntax */
     --secondary-text-color: #577592;
     --accent-color: #2294ed;
     --accent-color-dark: #1d69a3;
-    --padding-inline-section:20px;  /* left-right padding increase */
+    --padding-inline-section:20px;  /* left-right padding increase (padding-inline:20px); */
 }
 
 /* for heading */
@@ -35,12 +35,12 @@ p{
     font-family: 'Poppins',sans-serif;
     color: var(--secondary-text-color);
     font-size: 1.25rem;
-    line-height: 1.8rem;
+    line-height: 1.8rem; /* gap b/w upper and lower element */
 }
 /* anchor tag */
 a{
     text-decoration: none;
-    display: inline-block;
+    display: inline-block; /* inline means take only part till it is written, block means we can adjust ht and width */
 }   
 
 /* utility classes */
@@ -51,15 +51,16 @@ a{
 
 .container{
     max-width: 1180px;
-    margin-inline: auto;  /*short-hand property of m-i-(start,end) */
-    padding-inline: var(--padding-inline-section);
+    margin-inline: auto;  /*short-hand property of m-i-(left-right) */
+    padding-inline: var(--padding-inline-section); /* padding left-right */
+    overflow: hidden; /* hide the over-flow text and content */
 }
 .flex{
     display: flex;
    /* align-items:center;  /* text or background come to centre */
 }
 li{
-    list-style: none;
+    list-style: none; /* style the list tag */
 }
 
 /* top-banner */
@@ -90,6 +91,9 @@ li{
 }
 .nav-ele{
   /*  flex-basis: 730px; /* Width increases to 730px but height not increases */
+}
+.nav-toggle{
+    display: none;
 }
 .hover-link{
     color:var(--primary-text-color);
@@ -255,7 +259,7 @@ li{
 }
 .ceo-detail{
     margin-top: 20px;
-    align-items:center; 
+    align-items:center;
 }
 .flex-reverse{
     flex-direction: row-reverse;
@@ -275,9 +279,12 @@ li{
 }
 
 .image{
-    width: 96%;
-    margin: 20px auto;
-    position: relative;
+   /* width: 96%; 
+   position: relative;
+   margin: 20px auto; */
+   justify-content: space-between;
+    flex-wrap: wrap;
+    margin-block: 20px;
 }
 .img{
     width: 23%;
@@ -325,6 +332,12 @@ li{
 .link-column{
     flex-direction: column;
 }
+.link-column a{
+font-size: 1rem;
+}
+.link-column h4{
+gap: 50px;
+}
 .link-column a:hover{
     color: var(--accent-color);
 }
@@ -339,4 +352,5 @@ li{
 .m-l{
     margin-left: 20px;
 }
+
 

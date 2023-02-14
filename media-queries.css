@@ -1,0 +1,12 @@
+@media screen and (max-width:991px) {
+    .nav-toggle{
+        display: block; /* block means take the whole row or line like <p>,<div> tag */
+        margin-right: 20px;
+    }
+    .nav-ele{
+        display:none;
+    }
+    .img{
+        width: 50%;
+    }
+}
