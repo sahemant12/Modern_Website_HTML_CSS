@@ -85,6 +85,7 @@ li{
 .main-nav{
     justify-content: space-between;
     margin-top: 20px;
+    position: relative;
 }
 .nav-ele ul{
     justify-content: end; /*all nav element mov to right-end */
@@ -187,7 +188,8 @@ li{
         
     }
     .features-header a{
-       margin-top: 15px;
+       margin-block: 20px;
+
     }
     .features-card{
         flex-direction: column;

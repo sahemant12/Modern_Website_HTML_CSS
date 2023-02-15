@@ -7,7 +7,28 @@
         margin-right: 20px;
     }
     .nav-ele{
-        display:none;
+        position: absolute; 
+        background-color: white;
+        left: -100%;
+        top: 100%;  
+        width: 100%;
+        padding-block:20px;
+        transition: 0.2s ease-in-out;   
+    }
+    .nav-ele ul{
+        gap: 5px;
+    }
+    .nav-ele.active{
+        left: 0;
+    }
+    .secondary-button{
+       margin-block: 10px;
+    }
+    .main-nav{
+        overflow: initial;
+    }
+    .nav-ele ul{
+        flex-direction: column;
     }
     .examples-card{
         width:calc(50% - 10px);
@@ -55,5 +76,23 @@ align-items:stretch;
 }
 }
 @media screen and (max-width:479px){
-
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;  
+    }
+    .features-card{
+        min-width:100%;
+    }
+    .examples-card{
+        width: 100%;
+    }
+    .feature-disc{
+        align-items:stretch;
+        text-align: center;
+    }
 }
