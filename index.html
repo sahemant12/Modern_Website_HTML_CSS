@@ -55,6 +55,7 @@
     </header>
 
     <!-- Companies Section-->
+    <section class="company-section">
     <div class="container">
         <div class="upper">The world’s best companies rely on UsabilityHub to make better design decisions.</div>
         <div class="flex company">
@@ -67,6 +68,7 @@
             <img src="Assets/asset 9.png" class="logo" alt="">
         </div>
     </div>
+    </section>
 
 
  <!-- Features Section-->
@@ -193,25 +195,31 @@
     </section>
 
 <!-- Example-section -->
+<!-- Here I have problem that I solved after multiple days. The prbm is I'm using image as image but it is background image -->
     <section class="examples-section">
-        <div class="example">
+        <div class="container">
+        <div class="features-header">
             <h2>One platform, endless possibilities</h2>
-            <p class="secondary-button s-b2">see more examples<img src="Assets/asset 10.svg"></p>
+            <a href="#" class="secondary-button padd">See more examples <img src="Assets/asset 10.svg" alt=""></a>
         </div>
-       <div>
-        <div class="image flex">
-          <a href="#" class="flex">
-            <img src="Assets/asset 36.jpeg" class="img" alt="">
-            <img src="Assets/asset 37.jpeg" class="img" alt="">
-            <img src="Assets/asset 38.jpeg" class="img" alt="">
-            <img src="Assets/asset 39.jpeg" class="img" alt="">
-        </a> 
+        <div>
+            <div class="examples-area flex">
+                <a href="" class="examples-card">
+                    <h3 class="card-text">Can users complete a task in my software interface?</h3>
+                </a>
+                <a href="" class="examples-card" style="background-image: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(./Assets/asset\ 37.jpeg);">
+                    <h3 class="card-text">Can users find important pages on my website?</h3>
+                </a>
+                <a href="" class="examples-card">
+                    <h3 class="card-text">Is my website’s intended audience clear?</h3>
+                </a>
+                <a href="" class="examples-card">
+                    <h3 class="card-text">Do visitors understand what a page is about?</h3>
+                </a>
+            </div>
         </div>
-        </div>
-    <!--  <div class="big-bg">
-            <p class="txt">HEllo I'm Hemant Sah</p>
-        </div>
-        -->  
+
+    </div>
     </section>
 
     <section class="cta-section">
@@ -224,13 +232,11 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="footer-section">
-        <div class="flex container footer-element">
-        <div class=" flex ">
+    <footer>
+        <div class="flex container footer-Container">
             <a href="#" class="company-logo">
-                <img src="Assets/asset 1.png" alt="This is logo" width=150px height=30px  >
+                <img src="Assets/asset 1.png" alt="This is logo">
             </a>
-        </div>
         <div class="link-column flex">
             <h4>Product</h4>
             <a href="#">Overview</a>
@@ -252,12 +258,12 @@
         </div>
         <div class="link-column flex">
             <h4>Resources</h4>
-            <a>Blog</a>
-            <a>Examples</a>
-            <a>Testing guides</a>
-            <a>Help center</a>
-            <a>Contact</a>
-            <a>Careers</a>
+            <a href="#">Blog</a>
+            <a href="#">Examples</a>
+            <a href="#">Testing guides</a>
+            <a href="#">Help center</a>
+            <a href="#">Contact</a>
+            <a href="#">Careers</a>
         </div>
     </div>
     </footer>

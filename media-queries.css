@@ -1,4 +1,7 @@
 @media screen and (max-width:991px) {
+    h3{
+      font-size: 1.3rem;  
+    }
     .nav-toggle{
         display: block; /* block means take the whole row or line like <p>,<div> tag */
         margin-right: 20px;
@@ -6,7 +9,51 @@
     .nav-ele{
         display:none;
     }
-    .img{
-        width: 50%;
+    .examples-card{
+        width:calc(50% - 10px);
+        height: 180px;
     }
+    .examples-area{
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:767px){
+.header-section{
+    flex-direction: column-reverse;
+}
+.header-left{
+       max-width: 100vw;
+       text-align: center;
+    }
+    .primary-button{
+        width: 100%;
+    }
+    .features-card{
+        min-width: calc(50% - 20px);
+    }
+    .big-features-container{
+        flex-direction: column;
+    }
+    .feature-disc{
+        text-align: center;
+    }
+    .feature-img img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+}
+.footer-Container{
+    flex-direction: column;
+    gap: 40px;
+    text-align: center; 
+    align-items: center;   
+}
+.link-column{
+align-items:stretch;
+}
+}
+@media screen and (max-width:479px){
+
 }
